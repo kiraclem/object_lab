@@ -411,8 +411,8 @@ class Vehicle {
     this.mileage = mileage
   }
   move(miles) {
-    let newMileage = +this.mileage + miles
-    console.log(newMileage)
+    this.mileage += miles 
+    console.log(this.mileage)
   }
 }
 
@@ -422,7 +422,7 @@ class Vehicle {
 */
 
 //Code Here
-let myFirstVehicle = new Vehicle(5, "silver", "40000")
+let myFirstVehicle = new Vehicle(5, "silver", 40000)
 
 /* 
   Now we'll create a class that's based off of the vehicle class. 
@@ -446,7 +446,7 @@ class Motorcycle extends Vehicle {
 */
 
 //Code Here 
-let myFirstMotorcycle = new Motorcycle("1", "black", "12000", "Honda", "true")
+let myFirstMotorcycle = new Motorcycle("1", "black", 12000, "Honda", "true")
 
 /*
   Call the move function on myFirstMotorcycle (don't forget the parameter)
@@ -494,7 +494,7 @@ class Boat extends Vehicle {
 */
 
 //Code Here
-let TheBlackPearl = new Boat("100", "black", "10000", "The Black Pearl", "ship", "false")
+let TheBlackPearl = new Boat("100", "black", 10000, "The Black Pearl", "ship", "false")
 /*
   Call the checkSeaworthiness method on your new boat
 */
